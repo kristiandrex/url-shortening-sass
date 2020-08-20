@@ -1,0 +1,15 @@
+.statistics {
+    background-color: $light-gray;
+    padding: 5rem 1.5rem;
+    text-align: center;
+
+    &__title {
+        color: $dark-violet;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $grayish-violet;
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,61 @@
+.header {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;    
+    padding: 0 1.5rem;
+    position: relative;
+
+    &__checkbox {
+        display: none;
+
+        &:checked + .menu {
+            display: block;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        display: block;
+        height: 1rem;
+        user-select: none;
+        width: 1rem;
+    }
+
+    .menu {
+        display: none;
+        left: 0;
+        padding: 0 1.5rem;
+        position: absolute;
+        text-align: center;
+        top: 4rem;
+        width: 100%;
+
+        a {
+            color: #fff;
+            display: block;
+            font-size: .9rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .wrapper {
+            background-color: $violet;
+            border-radius: .5rem;            
+            height: 100%;
+            padding: 1.5rem;
+        } 
+
+        .nav__link {
+            margin-bottom: 1.5rem;
+        }
+        
+        .actions {
+            border-top: 1px solid $grayish-violet;
+
+            &__item {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}

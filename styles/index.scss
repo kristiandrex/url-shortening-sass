@@ -1,0 +1,40 @@
+@import 'colors';
+@import 'header';
+@import 'hero';
+@import 'shorten';
+@import 'results';
+@import 'statistics';
+@import 'card';
+@import 'boost';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    color: $dark-violet;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: $cyan; 
+    border-radius: 2rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-weight: bold;
+    outline: none;
+    padding: .5rem;
+    text-decoration: none;
+}

@@ -1,0 +1,54 @@
+.shorten {
+    background: linear-gradient(0deg, $light-gray 50%, #fff 50%);
+    padding: 0 1.5rem;
+}
+
+.form {
+    background-color: $violet;
+    background-image: url(../assets/bg-shorten-mobile.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+    padding: 1.5rem;
+
+    &__field {
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        border-radius: .25rem;
+        border: none;
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        padding: .5rem 1rem;
+        width: 100%;
+    }
+
+    &__span {
+        color: $red;
+        display: none;
+        font-size: .7rem;
+        font-style: italic;
+    }
+
+    &__btn.btn {
+        border-radius: .25rem;
+        font-size: 1rem;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    &--invalid &__input {
+        border: .2rem solid $red;
+        color: $red;
+
+        &::placeholder {
+            color: $red;
+        }
+    }
+
+    &--invalid &__span {
+        display: inline;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/index.css">
+	<title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+
+<body>
+	<header class="header">
+		<img src="./assets/logo.svg" alt="Shortly" class="header__logo">
+		<input type="checkbox" name="header__checkbox" id="header__checkbox" class="header__checkbox">
+		<div class="menu">
+			<div class="wrapper">
+				<nav class="nav">
+					<a href="#" class="nav__link">Features</a>
+					<a href="#" class="nav__link">Pricing</a>
+					<a href="#" class="nav__link">Resources</a>
+				</nav>
+				<div class="actions">
+					<a href="#" class="actions__item">Login</a>
+					<a href="#" class="actions__item btn">Sign Up</a>
+				</div>
+			</div>
+		</div>
+		<label for="header__checkbox" class="header__btn">
+			<img src="assets/bars-solid.svg" alt="Menu" class="header__icon">
+		</label>
+	</header>
+	<div class="hero">
+		<img src="assets/illustration-working.svg" alt="Working Illustration" class="hero__illustration">
+		<h1 class="hero__title">More than just shorter links</h1>
+		<p class="hero__text">
+			Build your brand’s recognition and get detailed insights
+			on how your links are performing.
+		</p>
+		<a href="#" class="btn hero__btn">Get Started</a>
+	</div>
+	<div class="shorten">
+		<form class="form" id="form">
+			<div class="form__field">
+				<input type="text" class="form__input" placeholder="Shorten a link here..." name="input">
+				<span class="form__span">Please add a link</span>
+			</div>
+			<button type="submit" class="form__btn btn">Shorten It!</button>
+		</form>
+	</div>
+	<div class="results"></div>
+	<div class="statistics">
+		<h2 class="statistics__title">Advanced Statistics</h2>
+		<p class="statistics__text">
+			Track how your links are performing across the web with our
+			advanced statistics dashboard.
+		</p>
+		<div class="card">
+			<div class="card__circle">
+				<img class="card__icon" src="assets/icon-brand-recognition.svg" alt="Brand Recognition">
+			</div>
+			<h3 class="card__title">
+				Brand Recognition
+			</h3>
+			<p class="card__text">
+				Boost your brand recognition with each click. Generic links don’t
+				mean a thing. Branded links help instil confidence in your content.
+			</p>
+		</div>
+		<div class="card">
+			<div class="card__circle">
+				<img class="card__icon" src="assets/icon-detailed-records.svg" alt="Detailed Records">
+			</div>
+			<h3 class="card__title">
+				Detailed Records
+			</h3>
+			<p class="card__text">
+				Gain insights into who is clicking your links. Knowing when and where
+				people engage with your content helps inform better decisions.
+			</p>
+		</div>
+		<div class="card">
+			<div class="card__circle">
+				<img class="card__icon" src="assets/icon-fully-customizable.svg" alt="Fully Customizable">
+			</div>
+			<h3 class="card__title">
+				Fully Customizable
+			</h3>
+			<p class="card__text">
+				Improve brand awareness and content discoverability through customizable
+				links, supercharging audience engagement.
+			</p>
+		</div>
+	</div>
+	<div class="boost">
+		<h2 class="boost__title">Boost your links today</h2>
+		<a href="#" class="boost__btn btn">Get Started</a>
+	</div>
+	<footer class="footer">
+		<h6 class="footer__subtitle">
+			Features
+		</h6>
+		<ul class="list">
+			<li class="list__item">
+				<a href="#" class="list__link">Link Shortening</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Branded Links</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Analytics</a>
+			</li>
+		</ul>
+		<h6 class="footer__subtitle">
+			Resources
+		</h6>
+		<ul class="list">
+			<li class="list__item">
+				<a href="#" class="list__link">Blog</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Developers</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Support</a>
+			</li>
+		</ul>
+		<h6 class="footer__subtitle">
+			Company
+		</h6>
+		<ul class="list">
+			<li class="list__item">
+				<a href="#" class="list__link">About</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Our Team</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Careers</a>
+			</li>
+			<li class="list__item">
+				<a href="#" class="list__link">Contact</a>
+			</li>
+		</ul>
+		<ul class="social">
+			<li class="social__item">
+				<a href="#" class="social__link">
+					<img src="assets/icon-facebook.svg" alt="Facebook" class="social__icon">
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link">
+					<img src="assets/icon-twitter.svg" alt="Twitter" class="social__icon">
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link">
+					<img src="assets/icon-pinterest.svg" alt="Pinterest" class="social__icon">
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link">
+					<img src="assets/icon-instagram.svg" alt="Instagram" class="social__icon">
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- <div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="#">Your Name Here</a>.
+	</div> -->
+	<script src="main.js"></script>
+</body>
+
+</html>

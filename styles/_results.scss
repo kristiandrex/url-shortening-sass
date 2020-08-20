@@ -1,0 +1,45 @@
+.results {
+    background: $light-gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1.5rem 0;   
+}
+
+.result {
+    background: #fff;
+    border-radius: .5rem;
+
+    &__header {
+        padding: 1rem;
+        border-bottom: 1px solid $gray;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__shorten {
+        color: $cyan;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+
+        &::selection {
+            background: none;
+            color: $cyan;
+        }
+    }
+
+    &__btn {
+        border-radius: .25rem !important;
+        display: block;
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+
+        &--copied {
+            background-color: $violet !important;
+        }
+    }
+}

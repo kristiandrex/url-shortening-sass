@@ -1,0 +1,25 @@
+.hero {
+    padding: 0 1.5rem 5rem;
+    overflow: hidden;
+    text-align: center;    
+
+    &__illustration {
+        height: 60vh;
+    }
+
+    &__title {
+        color: $dark-blue;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $grayish-violet;
+        margin-bottom: 2rem;
+    }
+
+    &__btn.btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+    }
+}

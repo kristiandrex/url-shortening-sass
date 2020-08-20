@@ -1,0 +1,19 @@
+.boost {
+    background-color: $violet;
+    background-image: url(../assets/bg-boost-mobile.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4rem 1.5rem;
+    text-align: center;
+
+    &__title {
+        color: #fff;
+        margin-bottom: 1.25rem;
+    }
+
+    &__btn.btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+    }
+}

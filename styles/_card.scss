@@ -1,0 +1,49 @@
+.card {
+    background-color: #fff;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    position: relative;
+
+    &__circle {
+        background-color: $violet;
+        border-radius: 50%;
+        height: 5rem;
+        margin: -4.5rem auto 2rem;
+        padding: 1.5rem;
+        width: 5rem;
+    }
+
+    &__icon {
+        vertical-align: middle;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $grayish-violet;
+        font-size: .8rem;
+    }
+
+    &::after {
+        background: $cyan;
+        bottom: -5rem;
+        content: '';
+        display: block;
+        height: 5rem;
+        left: 50%;
+        margin-left: -.25rem;
+        position: absolute;
+        width: .5rem;
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
