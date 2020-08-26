@@ -3,27 +3,28 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.5rem 1.5rem 0;   
+    padding: 1.5rem 10% 0;   
 }
 
 .result {
+    align-items: center;
     background: #fff;
     border-radius: .5rem;
-
-    &__header {
-        padding: 1rem;
-        border-bottom: 1px solid $gray;
-    }
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
 
     &__content {
-        padding: 1rem;
+        align-items: center;
+        display: flex;
+        gap: 1rem;
     }
 
     &__shorten {
-        color: $cyan;
-        outline: none;
         border: none;
+        color: $cyan;
         font-size: 1rem;
+        outline: none;
 
         &::selection {
             background: none;
@@ -34,12 +35,35 @@
     &__btn {
         border-radius: .25rem !important;
         display: block;
-        font-size: 1rem;
-        margin-top: 1rem;
-        width: 100%;
+        font-size: .9rem;
+        width: 6rem;
+        padding: .25rem 1rem !important;
 
         &--copied {
             background-color: $violet !important;
         }
     }
+}
+
+@media (max-width: $breakpoint) {
+    .result {
+        display: block;
+        padding: 0;
+
+        &__header {
+            border-bottom: 1px solid $gray;
+            padding: 1rem;
+        }
+    
+        &__content {
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        &__btn {
+            padding: .5rem !important;
+            width: 100% !important;
+        }
+    }    
 }

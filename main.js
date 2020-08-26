@@ -22,19 +22,18 @@ const render = (data, last) => {
                 value="https://rel.ink/${data.hashid}"
                 id="${data.hashid}"
                 readonly="readonly"
-            />        
+            />
+            <button 
+                type="button"
+                class="result__btn btn" 
+                data-id="${data.hashid}"
+            >
+                Copy
+            </button> 
         </div>
     `;
 
-    const button = document.createElement('button');
-
-    button.setAttribute('type', 'button');
-    button.setAttribute('class', 'result__btn btn');
-    button.setAttribute('data-id', data.hashid)
-    button.onclick = handleCopy;
-    button.innerText = "Copy";
-
-    result.querySelector('.result__content').appendChild(button);
+    result.querySelector('.result__btn').onclick = handleCopy;
 
     if (last) {
         return results.insertBefore(result, last);

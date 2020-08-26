@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'variables';
 @import 'header';
 @import 'hero';
 @import 'shorten';
@@ -31,10 +31,15 @@ body {
     border: none;
     color: #fff;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     font-family: inherit;
     font-weight: bold;
     outline: none;
     padding: .5rem;
     text-decoration: none;
+
+    &:hover {
+        background-color: $light-cyan;
+        color: #fff;
+    }
 }

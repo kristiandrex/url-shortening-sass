@@ -1,6 +1,6 @@
 .statistics {
     background-color: $light-gray;
-    padding: 5rem 1.5rem;
+    padding: 5rem 10%;
     text-align: center;
 
     &__title {
@@ -11,5 +11,35 @@
     &__text {
         color: $grayish-violet;
         font-size: .9rem;
+    }
+
+    &__container {
+        align-items: flex-start;
+        display: flex;
+        gap: 2rem;
+        margin-top: 5rem;
+        position: relative;
+
+        &::before {
+            width: 100%;
+            position: absolute;
+            display: block;
+            content: '';
+            height: .5rem;
+            background: $cyan;
+            top: calc(50% - .25rem);
+        }
+    }
+}
+
+@media (max-width: $breakpoint) {
+    .statistics {
+        &__container {
+            flex-direction: column;
+
+            &::before {
+                display: none;
+            }
+        }
     }
 }

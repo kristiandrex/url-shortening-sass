@@ -1,22 +1,25 @@
 .shorten {
     background: linear-gradient(0deg, $light-gray 50%, #fff 50%);
-    padding: 0 1.5rem;
+    padding: 0 10%;
 }
 
 .form {
     background-color: $violet;
-    background-image: url(../assets/bg-shorten-mobile.svg);
-    background-position-x: right;
+    background-image: url(../assets/bg-shorten-desktop.svg);
     background-repeat: no-repeat;
     border-radius: .5rem;
-    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
 
     &__field {
-        margin-bottom: 1rem;
+        position: relative;
+        width: 100%;
     }
 
     &__input {
         border-radius: .25rem;
+        box-sizing: border-box;
         border: none;
         font-family: inherit;
         font-size: 1rem;
@@ -25,18 +28,11 @@
         width: 100%;
     }
 
-    &__span {
-        color: $red;
-        display: none;
-        font-size: .7rem;
-        font-style: italic;
-    }
-
-    &__btn.btn {
-        border-radius: .25rem;
+    &__btn {
+        border-radius: .25rem !important;
         font-size: 1rem;
-        padding: .5rem;
-        width: 100%;
+        padding: .5rem 2rem !important;   
+        white-space: nowrap;   
     }
 
     &--invalid &__input {
@@ -48,7 +44,29 @@
         }
     }
 
-    &--invalid &__span {
-        display: inline;
+    &--invalid &__field {
+        &::after {
+            bottom: -1.5rem;
+            color: $red;
+            content: 'Please add a link';
+            display: block;            
+            font-family: inherit;
+            font-size: .75rem;
+            position: absolute;
+        }
+    }
+}
+
+@media (max-width: $breakpoint) {
+    .form {
+        background-image: url(../assets/bg-shorten-mobile.svg);
+        background-position: top right;
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 2.5rem;
+
+        &__btn {
+            width: 100%;
+        }
     }
 }
